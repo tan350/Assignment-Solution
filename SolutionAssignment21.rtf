@@ -1,0 +1,628 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Calibri;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red63\green127\blue95;\red127\green159\blue191;\red0\green0\blue192;\red240\green216\blue168;\red42\green0\blue255;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs22\lang9 ============================\b\fs36 Assignment21\b0\fs22 ===============================\fs24\lang1033\par
+\b\fs22\lang9\tab\tab\tab\tab\tab\tab Submitted By \fs36 TANUJA SHARMA\b0\fs24\lang1033\par
+\fs22\lang9 ==============================================================================\par
+\b Que1. Write a Java program to calculate the average value of array elements.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Avarray \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 a\cf2 []=\{3,8,9,5,6,7\};\cf0\par
+\cf2\tab        \cf1\b int\cf2\b0  \cf3 sum\cf2  = 0;\cf0\par
+\cf2\tab        \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0; \cf3 i\cf2  < \cf3 a\cf2 .\cf6 length\cf2  ; \cf3 i\cf2 ++)\cf0\par
+\cf2\tab         \cf3 sum\cf2  = \cf3 sum\cf2  + \cf3 a\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2\tab         \cf1\b double\cf2\b0  \cf3\highlight7 avg\cf2\highlight0  = \cf3 sum\cf2  / \cf3 a\cf2 .\cf6 length\cf2 ;\cf0\par
+\cf2\tab         System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Average value of the array elements is : "\cf2  + \cf3\highlight9 avg\cf2\highlight0 ); \cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Average value of the array elements is : 6.0\cf0\b\f0\fs22\par
+\par
+Que2. Write a Java program to test if an array contains a specific value.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  containspe \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b boolean\cf2\b0  \highlight9 find\highlight0 (\cf1\b int\cf2\b0 [] \cf3 a\cf2 , \cf1\b int\cf2\b0  \cf3 x\cf2 ) \{\cf0\par
+\cf2\tab       \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 n\cf2  : \cf3 a\cf2 ) \{\cf0\par
+\cf2\tab          \cf1\b if\cf2\b0  (\cf3 x\cf2  == \cf3 n\cf2 ) \{\cf0\par
+\cf2\tab             \cf1\b return\cf2\b0  \cf1\b true\cf2\b0 ;\cf0\par
+\cf2\tab          \}\cf0\par
+\cf2\tab       \}\cf0\par
+\cf2\tab       \cf1\b return\cf2\b0  \cf1\b false\cf2\b0 ;\cf0\par
+\cf2\tab    \}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 a\cf2 []= \{23,45,67,89,21,49\};\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\highlight9\i find\highlight0\i0 (\cf3 a\cf2 , 23));\cf0\par
+\cf2\tab      System.\cf6\b\i out\cf2\b0\i0 .println(\highlight9\i find\highlight0\i0 (\cf3 a\cf2 , 20));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 true\cf0\par
+\cf2 false\cf0\b\f0\fs22\par
+\par
+Que3. Write a Java program to remove a specific element from an array.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\cf1\b import\cf2\b0  java.util.Arrays;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  removarray \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3\highlight7 a\cf2\highlight0 [] = \{36, 56, 77, 18, 29, 49\};\cf0\par
+\cf2\tab\tab    \cf0\par
+\cf2\tab\tab    System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Original Array : "\cf2 +Arrays.\i toString\i0 (\cf3\highlight9 a\cf2\highlight0 ));     \cf0\par
+\cf2\tab\tab    \cf1\b int\cf2\b0  \cf3 r\cf2  = 1;\cf0\par
+\par
+\cf2\tab\tab    \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2  = \cf3 r\cf2 ; \cf3 i\cf2  < \cf3\highlight9 a\cf2\highlight0 .\cf6 length\cf2  -1; \cf3 i\cf2 ++)\{\cf0\par
+\cf2\tab\tab         \cf3\highlight9 a\cf2\highlight0 [\cf3 i\cf2 ] = \cf3\highlight9 a\cf2\highlight0 [\cf3 i\cf2  + 1];\cf0\par
+\cf2\tab\tab       \}\cf0\par
+\cf2\tab\tab     System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "After removing the second element: "\cf2 +Arrays.\i toString\i0 (\cf3\highlight9 a\cf2\highlight0 ));\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Original Array : [36, 56, 77, 18, 29, 49]\cf0\par
+\cf2 After removing the second element: [36, 77, 18, 29, 49, 49]\cf0\b\f0\fs22\par
+\par
+Que4. Write a Java program to copy an array by iterating the array.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\cf1\b import\cf2\b0  java.util.Arrays; \cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  itrarray \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 a\cf2 [] = \{56, 15, 36, 56, 77, 18, 29\};\cf0\par
+\cf2\tab\tab    \cf1\b int\cf2\b0  \cf3 n\cf2 [] = \cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [7];     \cf0\par
+\cf2\tab\tab  \cf0\par
+\cf2\tab\tab    System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Source Array : "\cf2 +Arrays.\i toString\i0 (\cf3 a\cf2 ));     \cf0\par
+\cf2\tab\tab    \cf0\par
+\cf2\tab\tab    \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0; \cf3 i\cf2  < \cf3 a\cf2 .\cf6 length\cf2 ; \cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab     \cf3 n\cf2 [\cf3 i\cf2 ] = \cf3 a\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab    System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "New Array: "\cf2 +Arrays.\i toString\i0 (\cf3 n\cf2 ));\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Source Array : [56, 15, 36, 56, 77, 18, 29]\cf0\par
+\cf2 New Array: [56, 15, 36, 56, 77, 18, 29]\cf0\b\f0\fs22\par
+\par
+Que5. Write a Java program to insert an element (specific position) into an array\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\cf1\b import\cf2\b0  java.util.Arrays; \cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  inarrayspe \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\par
+\cf2\tab\tab    \cf1\b int\cf2\b0  \cf3 a\cf2 [] = \{25, 14, 56, 15, 36, 56, 77, 18, 29, 49\};\cf0\par
+\cf2\tab\tab    \cf1\b int\cf2\b0  \cf3\highlight7 Ind\cf2\highlight0  = 2;\cf0\par
+\cf2\tab\tab    \cf1\b int\cf2\b0  \cf3 nvalue\cf2  = 5;\cf0\par
+\par
+\cf2\tab\tab   System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Original Array : "\cf2 +Arrays.\i toString\i0 (\cf3 a\cf2 ));     \cf0\par
+\cf2\tab\tab    \cf0\par
+\cf2\tab\tab   \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =\cf3 a\cf2 .\cf6 length\cf2 -1; \cf3 i\cf2  > \cf3\highlight9 Ind\cf2\highlight0 ; \cf3 i\cf2 --)\{\cf0\par
+\cf2\tab\tab     \cf3 a\cf2 [\cf3 i\cf2 ] = \cf3 a\cf2 [\cf3 i\cf2 -1];\cf0\par
+\cf2\tab\tab    \}\cf0\par
+\cf2\tab\tab    \cf3 a\cf2 [\cf3\highlight9 Ind\cf2\highlight0 ] = \cf3 nvalue\cf2 ;\cf0\par
+\cf2\tab\tab    System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "New Array: "\cf2 +Arrays.\i toString\i0 (\cf3 a\cf2 ));\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Original Array : [25, 14, 56, 15, 36, 56, 77, 18, 29, 49]\cf0\par
+\cf2 New Array: [25, 14, 5, 56, 15, 36, 56, 77, 18, 29]\cf0\b\f0\fs22\par
+\par
+Que6. Write a Java program to find the duplicate values of an array of integer values.\par
+CODE:\par
+\cf1\f1\fs20 public\cf2\b0  \cf1\b class\cf2\b0  dupliarray \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3\highlight7 a\cf2\highlight0 []= \{1,5, 5, 6, 6, 7\};\cf0\par
+\cf2\tab\tab  \cf0\par
+\cf2         \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3\highlight9 a\cf2\highlight0 .\cf6 length\cf2 -1; \cf3 i\cf2 ++)\cf0\par
+\cf2         \{\cf0\par
+\cf2             \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 j\cf2  = \cf3 i\cf2 +1; \cf3 j\cf2  < \cf3\highlight9 a\cf2\highlight0 .\cf6 length\cf2 ; \cf3 j\cf2 ++)\cf0\par
+\cf2             \{\cf0\par
+\cf2                 \cf1\b if\cf2\b0  ((\cf3\highlight9 a\cf2\highlight0 [\cf3 i\cf2 ] == \cf3\highlight9 a\cf2\highlight0 [\cf3 j\cf2 ]) && (\cf3 i\cf2  != \cf3 j\cf2 ))\cf0\par
+\cf2                 \{\cf0\par
+\cf2                     System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Duplicate Element : "\cf2 +\cf3\highlight9 a\cf2\highlight0 [\cf3 j\cf2 ]);\cf0\par
+\cf2                 \}\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Duplicate Element : 5\cf0\par
+\cf2 Duplicate Element : 6\par
+\cf0\b\f0\fs22\par
+Que7. Write a Java program to find the common elements between two arrays of integers.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\cf1\b import\cf2\b0  java.util.Arrays; \cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  twoarray \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3\highlight7 a1\cf2\highlight0 [] = \{5, 8, 9, 7, 10\};\cf0\par
+\cf2\tab       \cf1\b int\cf2\b0  \cf3 a2\cf2 []= \{1, 6, 4, 7, 8,2\};\cf0\par
+\cf2\tab  \cf0\par
+\cf2\tab        System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Array1 : "\cf2 +Arrays.\i toString\i0 (\cf3\highlight9 a1\cf2\highlight0 ));\cf0\par
+\cf2\tab        System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Array2 : "\cf2 +Arrays.\i toString\i0 (\cf3 a2\cf2 ));\cf0\par
+\cf2\tab  \cf0\par
+\cf2\tab       \cf0\par
+\cf2\tab         \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3\highlight9 a1\cf2\highlight0 .\cf6 length\cf2 ; \cf3 i\cf2 ++)\cf0\par
+\cf2\tab         \{\cf0\par
+\cf2\tab             \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 j\cf2  = 0; \cf3 j\cf2  < \cf3 a2\cf2 .\cf6 length\cf2 ; \cf3 j\cf2 ++)\cf0\par
+\cf2\tab             \{\cf0\par
+\cf2\tab                 \cf1\b if\cf2\b0 (\cf3\highlight9 a1\cf2\highlight0 [\cf3 i\cf2 ] == (\cf3 a2\cf2 [\cf3 j\cf2 ]))\cf0\par
+\cf2\tab                 \{\cf0\par
+\cf2\tab                  \cf0\par
+\cf2\tab                  System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Common element is : "\cf2 +(\cf3\highlight9 a1\cf2\highlight0 [\cf3 i\cf2 ]));\cf0\par
+\cf2\tab                  \}\cf0\par
+\cf2\tab             \}\cf0\par
+\cf2\tab         \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Array1 : [5, 8, 9, 7, 10]\cf0\par
+\cf2 Array2 : [1, 6, 4, 7, 8, 2]\cf0\par
+\cf2 Common element is : 8\cf0\par
+\cf2 Common element is : 7\cf0\b\f0\fs22\par
+\par
+Que8. Write a Java program to remove duplicate elements from an array.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  remdup \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b int\cf2\b0  removedup(\cf1\b int\cf2\b0  \cf3 a\cf2 [], \cf1\b int\cf2\b0  \cf3 n\cf2 )\cf0\par
+\cf2     \{\cf0\par
+\cf2         \cf1\b if\cf2\b0  (\cf3 n\cf2  == 0 || \cf3 n\cf2  == 1) \{\cf0\par
+\cf2             \cf1\b return\cf2\b0  \cf3 n\cf2 ;\cf0\par
+\cf2         \}\cf0\par
+\par
+\cf2         \cf1\b int\cf2\b0  \cf3 t\cf2 [] = \cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [\cf3 n\cf2 ];\cf0\par
+\cf2         \cf1\b int\cf2\b0  \cf3 j\cf2  = 0;\cf0\par
+\cf2  \cf0\par
+\cf2         \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 n\cf2  - 1; \cf3 i\cf2 ++) \{\cf0\par
+\cf2             \cf1\b if\cf2\b0  (\cf3 a\cf2 [\cf3 i\cf2 ] != \cf3 a\cf2 [\cf3 i\cf2  + 1]) \{\cf0\par
+\cf2                 \cf3 t\cf2 [\cf3 j\cf2 ++] = \cf3 a\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2  \cf0\par
+\cf2         \cf3 t\cf2 [\cf3 j\cf2 ++] = \cf3 a\cf2 [\cf3 n\cf2  - 1];\cf0\par
+\cf2         \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 j\cf2 ; \cf3 i\cf2 ++) \{\cf0\par
+\cf2             \cf3 a\cf2 [\cf3 i\cf2 ] = \cf3 t\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2         \}\cf0\par
+\cf2  \cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 j\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 a\cf2 [] = \{ 1, 1, 2, 2, 2 \};\cf0\par
+\cf2         \cf1\b int\cf2\b0  \cf3 n\cf2  = \cf3 a\cf2 .\cf6 length\cf2 ;\cf0\par
+\cf2         \cf3 n\cf2  = \i removedup\i0 (\cf3 a\cf2 , \cf3 n\cf2 );\cf0\par
+\cf2         System.\cf6\b\i out\cf2\b0\i0 .print(\cf8 "Array after remove duplicates: "\cf2 );\cf0\par
+\cf2         \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 n\cf2 ; \cf3 i\cf2 ++)\cf0\par
+\cf2             System.\cf6\b\i out\cf2\b0\i0 .print(\cf3 a\cf2 [\cf3 i\cf2 ] + \cf8 " "\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\par
+\cf0\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Array after remove duplicates: 1 2 \par
+\cf0\b\f0\fs22\par
+Que9. Write a Java program to find the second largest element in an array.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\cf1\b import\cf2\b0  java.util.Arrays;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  secondlargest \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3\highlight7 a\cf2\highlight0 []= \{35,23,76,89,98\};\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Original numeric array : "\cf2 +Arrays.\i toString\i0 (\cf3\highlight9 a\cf2\highlight0 ));            \cf0\par
+\cf2\tab\tab Arrays.\i sort\i0 (\cf3\highlight9 a\cf2\highlight0 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 index\cf2  = \cf3\highlight9 a\cf2\highlight0 .\cf6 length\cf2 -1;\cf0\par
+\cf2\tab\tab\cf1\b while\cf2\b0 (\cf3\highlight9 a\cf2\highlight0 [\cf3 index\cf2 ]==\cf3\highlight9 a\cf2\highlight0 [\cf3\highlight9 a\cf2\highlight0 .\cf6 length\cf2 -1])\{\cf0\par
+\cf2\tab\tab\tab\cf3 index\cf2 --;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Second largest value: "\cf2  + \cf3\highlight9 a\cf2\highlight0 [\cf3 index\cf2 ]);\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Original numeric array : [35, 23, 76, 89, 98]\cf0\par
+\cf2 Second largest value: 89\cf0\par
+\b\f0\fs22\par
+\par
+Que10. Write a Java program to find smallest and second smallest elements of a given array\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\cf1\b import\cf2\b0  \ul java.io\ulnone .*;\cf0\par
+\cf1\b import\cf2\b0  java.util.*;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  small_secondsmall \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab  \cf1\b int\cf2\b0  \cf3\highlight7 a\cf2\highlight0 []=\{111, 13, 25, 9, 34, 1\};\cf0\par
+\cf2\tab\tab     \cf1\b int\cf2\b0  \cf3\ul n\cf2\ulnone =\cf3\highlight9 a\cf2\highlight0 .\cf6 length\cf2 ;\cf0\par
+\cf2\tab\tab     Arrays.\i sort\i0 (\cf3\highlight9 a\cf2\highlight0 );\cf0\par
+\cf2\tab\tab     System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "smallest element is "\cf2 +\cf3\highlight9 a\cf2\highlight0 [0]);\cf0\par
+\cf2\tab\tab     System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "second smallest element is "\cf2 +\cf3\highlight9 a\cf2\highlight0 [1]);\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 smallest element is 1\cf0\par
+\cf2 second smallest element is 9\cf0\par
+\b\f0\fs22\par
+\par
+Que11. Write a Java program to get the character (Unicode code point) at the given index within the String.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  getcharstring \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab String \cf3 str\cf2  = \cf8 "TanujaSharma"\cf2 ;\cf0\par
+\cf2\tab     System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Original String : "\cf2  + \cf3 str\cf2 );\cf0\par
+\cf2\tab     \cf1\b int\cf2\b0  \cf3 val1\cf2  = \cf3 str\cf2 .codePointAt(1);\cf0\par
+\cf2\tab     \cf1\b int\cf2\b0  \cf3 val2\cf2  = \cf3 str\cf2 .codePointAt(9);\cf0\par
+\cf2\tab     System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Character = "\cf2  + \cf3 val1\cf2 );\cf0\par
+\cf2\tab     System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Character= "\cf2  + \cf3 val2\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Original String : TanujaSharma\cf0\par
+\cf2 Character = 97\cf0\par
+\cf2 Character= 114\cf0\b\f0\fs22\par
+\par
+Que12. Write a program to remove first occurrence of a character from string.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  remfirstocc \{\cf0\par
+\cf2\tab\cf1\b static\cf2\b0  String removeOcc(String \cf3 s\cf2 , \cf1\b char\cf2\b0  \cf3 ch\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab     \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 s\cf2 .length(); \cf3 i\cf2 ++)\cf0\par
+\cf2\tab     \{\cf0\par
+\par
+\cf2\tab         \cf1\b if\cf2\b0  (\cf3 s\cf2 .charAt(\cf3 i\cf2 ) == \cf3 ch\cf2 )\cf0\par
+\cf2\tab         \{\cf0\par
+\cf2\tab             \cf3 s\cf2  = \cf3 s\cf2 .substring(0, \cf3 i\cf2 ) +\cf0\par
+\cf2\tab                 \cf3 s\cf2 .substring(\cf3 i\cf2  + 1);\cf0\par
+\cf2\tab             \cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab         \}\cf0\par
+\cf2\tab     \}\cf0\par
+\par
+\cf2\tab     \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = \cf3 s\cf2 .length() - 1; \cf3 i\cf2  > -1; \cf3 i\cf2 --)\cf0\par
+\cf2\tab     \{\cf0\par
+\par
+\cf2\tab         \cf1\b if\cf2\b0  (\cf3 s\cf2 .charAt(\cf3 i\cf2 ) == \cf3 ch\cf2 )\cf0\par
+\cf2\tab         \{\cf0\par
+\cf2\tab             \cf3 s\cf2  = \cf3 s\cf2 .substring(0, \cf3 i\cf2 ) +\cf0\par
+\cf2\tab                 \cf3 s\cf2 .substring(\cf3 i\cf2  + 1);\cf0\par
+\cf2\tab             \cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab         \}\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab     \cf1\b return\cf2\b0  \cf3 s\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab  \cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab String \cf3 s\cf2  = \cf8 "hello world"\cf2 ;\cf0\par
+\cf2\tab\tab  \cf0\par
+\cf2\tab     \cf1\b char\cf2\b0  \cf3\highlight7 ch\cf2\highlight0  = \cf8 'l'\cf2 ;\cf0\par
+\cf2\tab  \cf0\par
+\cf2\tab     System.\cf6\b\i out\cf2\b0\i0 .print(\i removeOcc\i0 (\cf3 s\cf2 , \cf3\highlight9 ch\cf2\highlight0 ));\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 helo word\cf0\b\f0\fs22\par
+\par
+Que13. Write a program to remove last occurrence of a character from string.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  lastocc \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab String \cf3 delLastCharStr\cf2 = \cf8 "Java"\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b char\cf2\b0  \cf3\highlight7 del_lch\cf2\highlight0 =\cf8 'a'\cf2 ;\cf0\par
+\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .print(\cf8 "String to Delete Last Character =  "\cf2 +\cf3 delLastCharStr\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .print(\cf8 "\\nEnter the Character to Delete =  "\cf2 +\cf3\highlight9 del_lch\cf2\highlight0 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab StringBuilder \cf3 sb\cf2  = \cf1\b new\cf2\b0  StringBuilder(\cf3 delLastCharStr\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 i\cf2  = \cf3 delLastCharStr\cf2 .lastIndexOf(\cf3\highlight9 del_lch\cf2\highlight0 );\cf0\par
+\cf2\tab\tab\cf3 sb\cf2 .deleteCharAt(\cf3 i\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "\\nThe Final String after Deleting Last Occurrence of "\cf2  + \cf0\par
+\cf2\tab\tab\tab\tab\cf3\highlight9 del_lch\cf2\highlight0  + \cf8 " Character = "\cf2  + \cf3 sb\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 String to Delete Last Character =  Java\cf0\par
+\cf2 Enter the Character to Delete =  a\cf0\par
+\cf2 The Final String after Deleting Last Occurrence of a Character = Jav\par
+\cf0\b\f0\fs22\par
+Que14. Write a program to remove all occurrences of a character from string\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  removeallocc \{\cf0\par
+\cf2\tab\cf1\b static\cf2\b0  \cf1\b void\cf2\b0  removeChar(String \cf3 s\cf2 , \cf1\b char\cf2\b0  \cf3 c\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 j\cf2 , \cf3 count\cf2  = 0, \cf3 n\cf2  = \cf3 s\cf2 .length();\cf0\par
+\cf2\tab\tab\cf1\b char\cf2\b0  []\cf3 t\cf2  = \cf3 s\cf2 .toCharArray();\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = \cf3 j\cf2  = 0; \cf3 i\cf2  < \cf3 n\cf2 ; \cf3 i\cf2 ++)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0  (\cf3 t\cf2 [\cf3 i\cf2 ] != \cf3 c\cf2 )\cf0\par
+\cf2\tab\tab\tab\tab\cf3 t\cf2 [\cf3 j\cf2 ++] = \cf3 t\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab\tab\cf3 count\cf2 ++;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\par
+\cf2\tab\tab\cf1\b while\cf2\b0 (\cf3 count\cf2  > 0)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf3 t\cf2 [\cf3 j\cf2 ++] = \cf8 '\\0'\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf3 count\cf2 --;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf3 t\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab String \cf3 s\cf2  = \cf8 "hello"\cf2 ;\cf0\par
+\cf2\tab\tab\i removeChar\i0 (\cf3 s\cf2 , \cf8 'l'\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 heo \par
+\cf0\b\f0\fs22\par
+Que15. Write a Java program to replace a specified character with another character.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Removespecific \{\cf0\par
+\cf2\tab  \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\tab     \{\cf0\par
+\cf2\tab         String \cf3 str\cf2  = \cf8 "hello"\cf2 ;\cf0\par
+\cf2\tab         String \cf3 new_str\cf2  = \cf3 str\cf2 .replace(\cf8 'l'\cf2 , \cf8 'i'\cf2 );\cf0\par
+\cf2\tab         System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Original string: "\cf2  + \cf3 str\cf2 );\cf0\par
+\cf2\tab         System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "New String: "\cf2  + \cf3 new_str\cf2 );\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Original string: hello\cf0\par
+\cf2 New String: heiio\cf0\par
+\b\f0\fs22\par
+\par
+Que16. Write a program to trim leading white space characters in a string.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  trimstring \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab String \cf3 str\cf2  = \cf8 " Hello World "\cf2 ;\cf0\par
+\cf2\tab\tab String \cf3 new_str\cf2  = \cf3 str\cf2 .trim();\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "Original String:"\cf2  + \cf3 str\cf2 );\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "New String:"\cf2 + \cf3 new_str\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Original String: Hello World \cf0\par
+\cf2 New String:Hello World\cf0\b\f0\fs22\par
+\par
+Que17. Write a program to trim trailing white space characters in a string.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  removetrailing \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab String \cf3 str\cf2  = \cf1\b new\cf2\b0  String(\cf8 " Hello world "\cf2 );\cf0\par
+\cf2\tab       System.\cf6\b\i out\cf2\b0\i0 .println(\cf8 "String: "\cf2 +\cf3 str\cf2 );\cf0\par
+\cf2\tab       System.\cf6\b\i out\cf2\b0\i0 .print(\cf8 "Result after removing leading and trailing spaces:"\cf2  );\cf0\par
+\cf2\tab       System.\cf6\b\i out\cf2\b0\i0 .println(\cf3 str\cf2 .trim() );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 String:  Hello world \cf0\par
+\cf2 Result after removing leading and trailing spaces:Hello world\cf0\par
+\b\f0\fs22\par
+\par
+Que18. Write a program to print the word & count of words present in a given sentence.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Countwords \{\cf0\par
+\cf2\tab  \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b int\cf2\b0  count_Words(String \cf3 str\cf2 )\cf0\par
+\cf2\tab     \{\cf0\par
+\cf2\tab        \cf1\b int\cf2\b0  \cf3 count\cf2  = 0;\cf0\par
+\cf2\tab         \cf1\b if\cf2\b0  (!(\cf8 " "\cf2 .equals(\cf3 str\cf2 .substring(0, 1))) || !(\cf8 " "\cf2 .equals(\cf3 str\cf2 .substring(\cf3 str\cf2 .length() - 1))))\cf0\par
+\cf2\tab         \{\cf0\par
+\cf2\tab             \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 str\cf2 .length(); \cf3 i\cf2 ++)\cf0\par
+\cf2\tab             \{\cf0\par
+\cf2\tab                 \cf1\b if\cf2\b0  (\cf3 str\cf2 .charAt(\cf3 i\cf2 ) == \cf8 ' '\cf2 )\cf0\par
+\cf2\tab                 \{\cf0\par
+\cf2\tab                     \cf3 count\cf2 ++;\cf0\par
+\cf2\tab                 \}\cf0\par
+\cf2\tab             \}\cf0\par
+\cf2\tab             \cf3 count\cf2  = \cf3 count\cf2  + 1; \cf0\par
+\cf2\tab         \}\cf0\par
+\cf2\tab         \cf1\b return\cf2\b0  \cf3 count\cf2 ; \cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab String \cf3 str\cf2 =\cf8 "Hello world This is Tanuja Sharma"\cf2 ;\cf0\par
+\cf2\tab\tab System.\cf6\b\i out\cf2\b0\i0 .print(\cf8 "Number of words in the string: "\cf2  + \i count_Words\i0 (\cf3 str\cf2 )+\cf8 "\\n"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 Number of words in the string: 6\cf0\b\f0\fs22\par
+\par
+Que19. Check whether a string entered by user is a palindrome string or not.\par
+CODE:\par
+\cf1\f1\fs20 package\cf2\b0  testproject8;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  stringpalindrome \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b boolean\cf2\b0  isPalindrome(String \cf3 str\cf2 ) \{\cf0\par
+\cf2         \cf1\b int\cf2\b0  \cf3 left\cf2  = 0, \cf3 right\cf2  = \cf3 str\cf2 .length() - 1;\cf0\par
+\cf2         \cf0\par
+\cf2         \cf1\b while\cf2\b0 (\cf3 left\cf2  < \cf3 right\cf2 )\cf0\par
+\cf2         \{\cf0\par
+\cf2             \cf1\b if\cf2\b0 (\cf3 str\cf2 .charAt(\cf3 left\cf2 ) != \cf3 str\cf2 .charAt(\cf3 right\cf2 ))\cf0\par
+\cf2             \{\cf0\par
+\cf2                 \cf1\b return\cf2\b0  \cf1\b false\cf2\b0 ;\cf0\par
+\cf2             \}\cf0\par
+\cf2             \cf3 left\cf2 ++;\cf0\par
+\cf2             \cf3 right\cf2 --;\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf1\b true\cf2\b0 ;\cf0\par
+\cf2     \} \cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab String \cf3\highlight7 input\cf2\highlight0 =\cf8 "aba"\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\i isPalindrome\i0 (\cf3\highlight9 input\cf2\highlight0 ))\cf0\par
+\cf2         \{\cf0\par
+\cf2             System.\cf6\b\i out\cf2\b0\i0 .println(\cf3\highlight9 input\cf2\highlight0 +\cf8 " is a palindrome string"\cf2 );\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b else\cf0\b0\par
+\cf2         \{\cf0\par
+\cf2             System.\cf6\b\i out\cf2\b0\i0 .println(\cf3\highlight9 input\cf2\highlight0 +\cf8 " is not a palindrome string"\cf2 );\cf0\par
+\cf2         \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f0\fs22\par
+OUTPUT:\par
+\cf2\b0\f1\fs20 aba is a palindrome string\cf0\b\f0\fs22\par
+\par
+Que20. What will happen if we do not override all abstract methods in subclass?\par
+Ans20= \b0 When we do not override all abstract methods in subclass then it will show a compile time error.\b\par
+\par
+Que21. What is the difference between Abstraction and Encapsulation?\par
+Ans21= Abstraction: \b0 Data Abstraction is the property in which only the essential details are displayed to the user. The non-essential units are not displayed to the user.\b\par
+Encapsulation: \b0 Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.\b\par
+\par
+Que22. Why abstract class has constructor even though you cannot create object?\par
+Ans22= \b0 abstract class has constructor even though we cannot create object Because it's abstract and an object is concrete.\b\par
+\par
+Que23. What is Out Of Memory Error in Exception Handling?\par
+Ans23= \b0 OutOfMemoryError is a runtime error in Java which occurs when the Java Virtual Machine (JVM) is unable to allocate an object due to insufficient space in the Java heap. \b\par
+\par
+Que24. What is the difference between throws and throw in java?\par
+Ans24= Throw: \b0 The throw keyword is used inside a function. It is used when it is required to throw an Exception logically.  It can throw only one exception at a time. throw keyword cannot propagate checked exceptions.\par
+\b Throws: \b0 The throws keyword used in a method signature. It declares what exceptions a method can throw.\b  \b0 The throws keyword can be used to declare multiple exceptions. throws keyword is used to propagate the checked Exceptions only. \par
+\b\par
+Que25. Give some examples of Checked exceptions?\par
+Ans25= Some examples of Checked exceptions are:\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\b0 ClassNotFoundException\par
+{\pntext\f3\'B7\tab}IOException\par
+{\pntext\f3\'B7\tab}SQLException\b\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\par
+Que26. Give some examples of Unchecked exceptions?\par
+Ans26= Some examples of Unchecked exceptions are:\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\b0 ArithmeticException.\par
+{\pntext\f3\'B7\tab}NullPointerException.\par
+{\pntext\f3\'B7\tab}ArrayIndexOutOfBoundsException.\b\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\par
+Que27. List the Methods in the Throwable class?\par
+Ans27= The Methods in the Throwable class are:\b0\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720\sa200\sl276\slmult1 getMessage()\par
+{\pntext\f3\'B7\tab}getSuppressed()\par
+{\pntext\f3\'B7\tab}getStackTrace()\par
+{\pntext\f3\'B7\tab}fillInStackTrace()\par
+{\pntext\f3\'B7\tab}getLocalizedMessage()\par
+{\pntext\f3\'B7\tab}initCause()\par
+{\pntext\f3\'B7\tab}getCause()\par
+{\pntext\f3\'B7\tab}printStackTrace()\b\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\par
+Que28. What is Array Index Out Of Bounds Exception in java?\par
+Ans28= \b0 The ArrayIndexOutOfBoundsException is a runtime exception in Java that occurs when an array is accessed with an illegal index. The index is either negative or greater than or equal to the size of the array.\b\par
+\par
+Que29. Will the code compile successfully? If yes, what will be the output?\par
+public abstract class A \{\par
+abstract void m1();\par
+\}\par
+public class B extends A \{\par
+ void m1()\{\par
+ System.out.println("m1 in class B");\par
+ \}\par
+\}\par
+public class Test \{\par
+public static void main(String[] args) \{\par
+B b = new B();\par
+ b.m1();\par
+ \}\par
+\}\par
+Ans29= \b0 Yes, the code will be compiled successfully. The output is m1 in class B\par
+\b\par
+Que31.Consider the below given code.\par
+public abstract class A \{\par
+abstract void m1();\par
+void m2()\{\par
+ System.out.println("One\rdblquote );\par
+ \}\par
+\}\par
+How to call m2() method in the above code?\par
+Ans31= \b0 we can call the m2() method by extending the abstract class A in a subclass then we call the method.\b\par
+\fs24\lang1033\par
+
+\pard\sa200\sl276\slmult1\b0\f2\fs22\lang9\par
+}
+ 

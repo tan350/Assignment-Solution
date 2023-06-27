@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs22\lang9 ============================\b\fs36 Assignment28\b0\fs22 ===============================\fs24\lang1033\par
+\b\fs22\lang9\tab\tab\tab\tab\tab\tab Submitted By \fs36 TANUJA SHARMA\b0\fs24\lang1033\par
+\fs22\lang9 ==============================================================================\par
+
+\pard\sa200\sl276\slmult1\b\f1 Que1. What is TestNg? What are the advantages of TestNG?\par
+Ans1= TestNg: \b0 TestNG is an automation testing framework in which NG stands for \ldblquote Next Generation\rdblquote . TestNG provides us full control over the test cases and the execution of the test cases. Due to this reason, TestNG is also known as a testing framework.\b\par
+Advantages of TestNG:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 TestNG provides parallel execution of test methods\par
+{\pntext\f2\'B7\tab}It allows to define dependency of one test method over other method\par
+{\pntext\f2\'B7\tab}It allows to assign priority to test methods\par
+{\pntext\f2\'B7\tab}It allows grouping of test methods into test groups\par
+{\pntext\f2\'B7\tab}It has support for parameterizing test cases using @Parameters annotation\par
+{\pntext\f2\'B7\tab}It allows data driven testing using @DataProvider annotation\par
+{\pntext\f2\'B7\tab}It has different assertions that helps in checking the expected and actual results\par
+{\pntext\f2\'B7\tab}Detailed (HTML) reports\b\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 Que2. What are the annotations used in the TestNG?\par
+Ans2= The  annotations used in the TestNG are:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 BeforeSuite\par
+{\pntext\f2\'B7\tab}BeforeTest\par
+{\pntext\f2\'B7\tab}BeforeClass\par
+{\pntext\f2\'B7\tab}BeforeMethod\par
+{\pntext\f2\'B7\tab}Test Case\par
+{\pntext\f2\'B7\tab}AfterMethod\par
+{\pntext\f2\'B7\tab}AfterClass\par
+{\pntext\f2\'B7\tab}AfterTest\par
+{\pntext\f2\'B7\tab}AfterSuite\b\par
+
+\pard\sa200\sl276\slmult1\par
+Que3. What are the annotations used in the TestNG?\par
+Ans3- same as Ans2\par
+\par
+Que4. What is the sequence of execution of all the annotations in TestNG?\par
+Ans4= The sequence of execution of all the annotations in TestNG is,\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0 @BeforeSuite\par
+{\pntext\f1 2.\tab}@BeforeTest\par
+{\pntext\f1 3.\tab}@BeforeClass\par
+{\pntext\f1 4.\tab}@BeforeMethod\par
+{\pntext\f1 5.\tab}@Test\par
+{\pntext\f1 6.\tab}@AfterMethod\par
+{\pntext\f1 7.\tab}@AfterClass\par
+{\pntext\f1 8.\tab}@AfterTest\par
+{\pntext\f1 9.\tab}@AfterSuite\par
+
+\pard\sa200\sl276\slmult1\b\par
+Que5. How to set the priorities in TestNG?\par
+Ans5= To set the priorities in TestNG:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Definition of Priority in TestNG test methods can only be the @Test methods.\par
+{\pntext\f2\'B7\tab}Lower the priority number; higher is the priority of the test case method.\par
+{\pntext\f2\'B7\tab}Priority in TestNG contains only integer value. The value can be negative, zero, or positive.\par
+{\pntext\f2\'B7\tab}One method is allowed to have only one priority in TestNG.\par
+
+\pard\sa200\sl276\slmult1\b Syntax:  \b0 @Test (priority = 1)\par
+public void func()\{\par
+   //test code\par
+\}\par
+
+\pard\sa200\sl276\slmult1\b\par
+Que6. Define grouping in TestNG?\par
+Ans6= Grouping in TestNG: \b0 TestNG Groups allow us to perform groupings of different test methods. It's required when we want to access the test methods of different classes. Not only we can declare the methods within a specified group, we can also declare another group within a specified group.\b\par
+\par
+Que7. How to pass the parameter in test case through testng.xml file?\par
+Ans7= To pass the parameter in test case through testng.xml file,\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Create a java test class, say, ParameterizedTest1.java.\par
+{\pntext\f2\'B7\tab}Add test method parameterTest() to our test class. This method takes a string as input parameter.\par
+{\pntext\f2\'B7\tab}Add the annotation @Parameters("name") to this method. The parameter would be passed a value from testng.xml\b\par
+
+\pard\sa200\sl276\slmult1 Syntax in testing.xml file:\par
+\b0 <suite name = "Suite1">\par
+   <test name = "test1">\par
+      <parameter name = "Name" value="manisha"/>\par
+      <classes>\par
+         <class name = "ParameterizedTest1" />\par
+      </classes>\par
+   </test>\par
+</suite>\b\par
+
+\pard\sa200\sl276\slmult1\par
+Que8. What is the importance of testng.xml file?\par
+Ans8= The importance of testng.xml file:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 testng.xml file allows to include or exclude the execution of test methods and test groups\par
+{\pntext\f2\'B7\tab}It allows to pass parameters to the test cases\par
+{\pntext\f2\'B7\tab}Allows to add group dependencies\par
+{\pntext\f2\'B7\tab}Allows to add priorities to the test cases\par
+{\pntext\f2\'B7\tab}Allows to configure parallel execution of test cases\par
+{\pntext\f2\'B7\tab}Allows to parameterize the test cases\b\par
+
+\pard\sa200\sl276\slmult1\par
+Que9. How can we disable the test case from running?\par
+Ans9= \b0 The annotation @Test(enabled = false) helps to disable this test case. If a test method is annotated with @Test(enabled = false), then the test case that is not ready to test is bypassed. \b\par
+\par
+Que10. How to Write Test Cases in TestNG?\par
+Ans10= To write Test Cases in TestNG:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Create a java test class.\par
+{\pntext\f2\'B7\tab}Add a test method to our test class.\par
+{\pntext\f2\'B7\tab}Add an Annotation @Test to that method.\par
+{\pntext\f2\'B7\tab}Implement the test condition and check the condition using assertEquals API of TestNG.\par
+{\pntext\f2\'B7\tab}create testng.xml file to execute test case.\par
+
+\pard\sa200\sl276\slmult1\b\par
+Que11. What is parameterization in TestNG?\par
+Ans11= Parameterization in TestNG: \b0 Parameterization in TestNG means we want to pass a parameter into the test with multiple values. Each value will run on the same test, and the output will be generated for final analysis.\b\par
+\par
+Que12. How is TestNG different from Selenium WebDriver?\par
+Ans12= The difference b/w TestNG and Selenium WebDriver are:\par
+TestNG: \b0 TestNG stands for Test Next Generation. It is an automation testing framework and uses annotations. Annotations are lines of code that control how the method below it will execute. The greatest advantage of TestNG is that we can generate test reports and know the number of scripts passed, failed or skipped.\par
+\b Selenium WebDriver: \b0 It's a web automation framework which allows us to execute test across various browsers. It also allows us to create the test scripts in any programming language we want. WebDriver makes direct calls to the browser using each browser\rquote s native support for automation.\b\par
+\par
+Que13. How can we make one test method dependent on others using TestNG?\par
+Ans13= \b0 Using 'dependsOnMethod' attribute within @Test annotation, we can specify the name of the parent test method on which the test should be dependent. On execution of the whole test class or test suite, the parentTest method will run before the dependentTest.\par
+\b\par
+Que14. How can we pass the parameter to test script using TestNG?\par
+Ans14= Syntax:\par
+\b0 public class Params\par
+\{\par
+    @Test\par
+    @Parameters (\{"val1", "val2"\})\par
+    public void Sum(int v1, int v2) \{\par
+    \tab int fsum = v1 + v2;\par
+        System.out.println("Sum= " + sum);\par
+    \}\par
+\}\b\par
+}
+ 

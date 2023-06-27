@@ -1,0 +1,179 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil Consolas;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs22\lang9 ============================\b\fs36 Assignment5\b0\fs22 =============================\fs24\lang1033\par
+\b\fs22\lang9\tab\tab\tab\tab\tab\tab Submitted By \fs36 TANUJA SHARMA\b0\fs24\lang1033\par
+\fs22\lang9 ==============================================================================\fs24\lang1033\par
+
+\pard\sa200\sl276\slmult1\b\f1\fs22\lang9 Que1= Specify the need and advantage of inheritance with an example.\par
+Ans1= Inheritance \b0 is a mechanism in which one object acquires all the properties and behaviors of a parent object. \par
+\b Need of Inheritance:-\par
+\b0 (i) For code reusability, we need Inheritance. So that the code that is present in the parent class can be directly used by the child class.\par
+(ii) To achieve run-time polymorphism by method overriding with the help of inheritance.\par
+\b Advantage of Inheritance:-\b0\par
+\b Minimizing duplicate code: \b0 The main benefits of Inheritance include minimizing the identical code as it allows sharing of the common code among other subclasses.\par
+\b Flexibility: \b0 Inheritance makes the code flexible to change, as you will adjust only in one place, and the rest of the code will work smoothly.\par
+\b Overriding: \b0 With the help of Inheritance, you can override the methods of the base class.\par
+\b Data Hiding: \b0 The base class in Inheritance decides which data to be kept private, such that the derived class will not be able to alter it.\par
+\b Example of minimizing duplicate code, flexibility=\par
+\b0 class Animal\{  \par
+void eat()\{System.out.println("I'm eating");\}  \par
+\}  \par
+class cat extends Animal\{  \par
+void meow()\{System.out.println("meow");\}  \par
+\}  \par
+class example\{  \par
+public static void main(String args[])\{  \par
+cat c=new cat();  \par
+c.meow();  \par
+c.eat();  \par
+\}\}  \par
+OUTPUT= \par
+meow\par
+I'm eating\par
+\b Example of method overriding= \par
+//we are overriding the run method.\par
+\b0 class Vehicle\{  \par
+void run()\{System.out.println("This is vehicle");\}  \par
+\}  \par
+class car extends Vehicle\{  \par
+void run()\{System.out.println("This is car");\}  \par
+\}  \par
+class bike extends Vehicle\{  \par
+void run()\{System.out.println("This is bike");\}  \par
+\}  \b\par
+Example of data hiding=\par
+//we are making the data member private so anyone from outside can't access it.\b0\par
+class A \par
+\{\par
+ private int x = 20;\par
+\}\par
+class B extends A \par
+\{\par
+ int y = 50;\par
+\}\b\par
+Que2= State the type of inheritance with real life examples.\par
+Ans 2= \b0 The type of Inheritance are:\par
+\b (i) Single Inheritance: \b0 When a class inherits another class, it is known as a single inheritance. \par
+\b eg= \b0 Human has  the ability to speak, eat, drink, which is inherited properties from homosapiens. \b\par
+(ii) Multilevel Inheritance: \b0 When there is a chain of inheritance, it is known as multilevel inheritance.\par
+\b eg= \b0 A child inheriting properties from his father who inherited from his grandfather.\b\par
+(ii) Hierarchical Inheritance: \b0 When two or more classes inherits a single class, it is known as hierarchical inheritance.\par
+\b eg=\b0  A car and Truck inherit the properties from class vehicle.\b\par
+(iv) Multiple Inheritance: \b0 When a class can inherit properties of more than one parent class, it is known as Multiple Inheritance.\par
+\b eg= \b0 when maruti and suzuki two different classes, when both collab made a Child Car called as Ertiga .So Ertiga have characterstic of Maruti as well as Suzuki .\b\par
+(v) Hybrid Inheritance:\b0  When combining more than one type of Inheritance together while deriving subclasses in a program is called a Hybrid Inheritance.\par
+\b eg= \b0 Son and daughter two different classes inherits properties from father class and father class inherits the properties from grandfather.\b\par
+Que3=  Describe types of relationships with examples.\par
+Ans3= \b0 A relationship in Java means different relations between two or more classes.\par
+There are two types of relationship:\par
+\b (i) Is-A relationship: \b0 Whenever one class inherits another class, it is called an IS-A relationship.\par
+IS-A relationship can simply be achieved by using extends Keyword.\par
+IS-A relationship is additionally used for code reusability in Java and to avoid code redundancy.\par
+IS-A relationship is unidirectional.\par
+\b eg=  \b0 Maruti is a car. We can say that Maruti extends car class , so their exists Is-A-relationship\par
+\b (ii) Has-A relationship: \b0 Whenever an instance of one class is used in another class, it is called HAS-A relationship.\par
+Has-A relationship denotes a whole-part relationship where a part cannot exist without the whole.\par
+In other words, a relationship in which an object of one class has a reference to an object of another class or another instance of the same class is called Has-A relationship \par
+\b eg= \b0  CPU is part of the computer. We can also say this relationship as \ldblquote A computer has a CPU\rdblquote .\par
+The existence of a CPU makes sense only within the computer. So, a computer and CPU represent the whole-part relationship.\b\par
+Que4= Will the code successfully compiled? If yes, what is the output?\par
+public class A \{\par
+ int x = 20;\par
+\}\par
+public class B extends A \{\par
+ int x = 30;\par
+\}\par
+public class Test \{\par
+public static void main(String[] args)\par
+\{\par
+ B b = new B();\par
+ System.out.println(b.x);\par
+ A a = new A();\par
+ System.out.println(a.x);\par
+ A a2 = new B();\par
+ System.out.println(a2.x);\par
+ \}\par
+\}\par
+\b0 OUTPUT=\par
+\cf1\f2\fs20 30\cf0\par
+\cf1 20\cf0\par
+\cf1 20\cf0\b\f1\fs22\par
+Que5= Will this code compile successfully? If yes, what is the output? If no, identify the errors.\par
+package pack1;\par
+public class A\par
+\{\par
+ private int x = 50;\par
+ protected int y = 100;\par
+ int z = 200;\par
+\}\par
+package pack2;\par
+import pack1.A;\par
+public class B extends A \{\par
+\}\par
+import pack2.B;\par
+public class Test \{\par
+public static void main(String[] args)\par
+\{\par
+ B b = new B();\par
+ System.out.println(b.x);\par
+ System.out.println(b.y);\par
+ System.out.println(b.z);\par
+ \}\par
+\}\par
+\b0 OUTPUT= The program will not compiled successfully because we cannot access the private data member using Inheritance in other package.\b\par
+Que6= What is the difference between Composition and Inheritance in OOP?\par
+Ans6= Inheritance: \par
+\b0 (i) In inheritance, we define the class which we are inheriting(super class) and most importantly it cannot be changed at runtime.\par
+(ii) we can only extend one class, in other words more than one class can\rquote t be extended as java do not support multiple inheritance. \par
+(iii) In inheritance we need parent class in order to test child class.\par
+(iv) Inheritance cannot extend final class.\par
+(v) It is an is-a relationship.\par
+\b Composition:\par
+\b0 (i) In composition we only define a type which we want to use and which can hold its different implementation also it can change at runtime. Hence, Composition is much more flexible than Inheritance.\par
+(ii) Whereas composition allows to use functionality from different class.\par
+(iii) Composition allows to test the implementation of the classes we are using independent of parent or child class.\par
+(iv) Whereas composition allows code reuse even from final classes.\par
+(v) It is a has-a relationship.\par
+\b Que7= What is method hiding in Java?\par
+Ans7= Method hiding: \b0 if a subclass defines a static method with the same signature as a static method in the super class, in such a case, the method in the subclass hides the one in the superclass." The mechanism is known as method hiding. It happens because static methods are resolved at compile time.\par
+\b eg=  \b0 class ex \{\par
+    public static void f1()\par
+    \{System.out.println( "f1 method of the ex class is executed.");\}\par
+\}\par
+\par
+class Sample extends ex \{\par
+    public static void f1()\par
+    \{System.out.println("f1 of the Sample class is executed."); \}\par
+\}\par
+public class Main \{\par
+    public static void main(String args[])\par
+    \{\par
+       ex d1 = new ex();\par
+        ex d2 = new Sample();\par
+        d1.f1();\par
+        d2.f1();\par
+    \}\par
+\}\b\par
+Que8= How to call a method of a subclass, if you are holding an object of the subclass in a reference variable of type superclass?\par
+Ans8=  \b0 public\b  \b0 class Bicycle\{\par
+public void run()\par
+\{System.out.println("This is Bicycle");\}\par
+\}\par
+public class Bike extends Bicycle\{\par
+public voifd run()\par
+\{System.out.println("This is Bike");\}\}\par
+\}\par
+public class Main \{\par
+    public static void main(String args[])\par
+    \{\par
+       Bicycle b1 = new Bike();\par
+        Bike b2 = new Bike();\par
+        b1.run();\par
+        b2.run();\par
+    \}\par
+\}\b\par
+\b0\par
+\par
+}
+ 

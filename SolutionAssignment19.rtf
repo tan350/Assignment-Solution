@@ -1,0 +1,586 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil Consolas;}{\f3\fnil\fcharset0 Consolas;}{\f4\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red0\green0\blue192;\red42\green0\blue255;\red0\green200\blue125;\red240\green216\blue168;\red212\green212\blue212;\red63\green127\blue95;\red127\green159\blue191;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs22\lang9 ============================\b\fs36 Assignment19\b0\fs22 ===============================\fs24\lang1033\par
+\b\fs22\lang9\tab\tab\tab\tab\tab\tab Submitted By \fs36 TANUJA SHARMA\b0\fs24\lang1033\par
+\fs22\lang9 ==============================================================================\fs24\lang1033\par
+
+\pard\sa200\sl276\slmult1\b\f1\fs22\lang9 Que1 Write a Java program and compute the sum of the digits of an integer.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;  \cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  sumd \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 [])  \cf0\par
+\cf2\tab\{  \cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 n\cf2 ,\cf3 d\cf2 ,\cf3 sum\cf2  = 0;  \cf0\par
+\cf2\tab\tab Scanner \cf3\ul s\cf2\ulnone  = \cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );  \cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Enter the number: "\cf2 );  \cf0\par
+\cf2\tab\tab\cf3 n\cf2  = \cf3 s\cf2 .nextInt();  \cf0\par
+\cf2\tab\tab\cf1\b while\cf2\b0 (\cf3 n\cf2  > 0)  \cf0\par
+\cf2\tab\tab\{      \cf0\par
+\cf2\tab\tab\tab\cf3 d\cf2 = \cf3 n\cf2  % 10;  \cf0\par
+\cf2\tab\tab\tab\cf3 sum\cf2  = \cf3 sum\cf2  + \cf3 d\cf2 ;  \cf0\par
+\cf2\tab\tab\tab\cf3 n\cf2  = \cf3 n\cf2 / 10;  \cf0\par
+\cf2\tab\tab\} \cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Sum of Digits: "\cf2 +\cf3 sum\cf2 );  \cf0\par
+\cf2\tab\}   \cf0\par
+\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Enter the number: \cf6 342\cf0\par
+\cf2 Sum of Digits: 9\cf0\par
+\b\f1\fs22\par
+\par
+Que2 Write a program to take two numbers as input from user. Display all the odd numbers between the entered numbers m & n.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;  \cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  odd \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 []) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 m\cf2 ,\cf3 n\cf2 ;\cf0\par
+\cf2\tab\tab Scanner \cf3\ul s\cf2\ulnone  = \cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );  \cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Enter the number: "\cf2 );  \cf0\par
+\cf2\tab\tab\cf3 m\cf2  = \cf3 s\cf2 .nextInt();  \cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Enter the number: "\cf2 );  \cf0\par
+\cf2\tab\tab\cf3 n\cf2  = \cf3 s\cf2 .nextInt();  \cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Odd Numbers from"\cf2 +\cf3 m\cf2 +\cf5 " to "\cf2 +\cf3 n\cf2 +\cf5 " are: "\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = \cf3 m\cf2 ; \cf3 i\cf2  <= \cf3 n\cf2 ; \cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0  (\cf3 i\cf2  % 2 != 0) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 i\cf2  + \cf5 ", "\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Enter the number: \cf6 1\cf0\par
+\cf2 Enter the number: \cf6 9\cf0\par
+\cf2 Odd Numbers from1 to 9 are: 1, 3, 5, 7, 9, \cf0\b\f1\fs22\par
+\par
+Que3 Write a Java program to count the letters, spaces, numbers and other characters of an input string.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  count \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  count_l_s_d(String \cf3 x\cf2 )\{\cf0\par
+\cf2\tab\tab\cf1\b char\cf2\b0 [] \cf3 ch\cf2  = \cf3 x\cf2 .toCharArray();\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 letter\cf2  = 0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 space\cf2  = 0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 digit\cf2  = 0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 other\cf2  = 0;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 x\cf2 .length(); \cf3 i\cf2 ++)\{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (Character.\i isLetter\i0 (\cf3 ch\cf2 [\cf3 i\cf2 ]))\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 letter\cf2  ++ ;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (Character.\i isDigit\i0 (\cf3 ch\cf2 [\cf3 i\cf2 ]))\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 digit\cf2  ++ ;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (Character.\i isSpaceChar\i0 (\cf3 ch\cf2 [\cf3 i\cf2 ]))\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 space\cf2  ++ ;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 other\cf2  ++;\cf0\par
+\cf2\tab\tab\tab\}\par
+\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "The string is : Hello 123 #$%@ world"\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "letter: "\cf2  + \cf3 letter\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "space: "\cf2  + \cf3 space\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "number: "\cf2  + \cf3 digit\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "other: "\cf2  + \cf3 other\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab String \cf3 s\cf2  = \cf5 "Hello 123 #$%@ world"\cf2 ;\cf0\par
+\cf2\tab\tab\i count_l_s_d\i0 (\cf3 s\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 The string is : Hello 123 #$%@ world\cf0\par
+\cf2 letter: 10\cf0\par
+\cf2 space: 3\cf0\par
+\cf2 number: 3\cf0\par
+\cf2 other: 4\cf0\par
+\b\f1\fs22\par
+\par
+Que4 Write a program to enter any number and print it in words.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Numberinwords \{\cf0\par
+\cf2\tab\cf1\b static\cf2\b0  \cf1\b void\cf2\b0  printValue(\cf1\b char\cf2\b0  \cf3 digit\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b switch\cf2\b0  (\cf3 digit\cf2 )\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '0'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Zero "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '1'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "One "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '2'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Two "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '3'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Three "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '4'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Four "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '5'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Five "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '6'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Six "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '7'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Seven "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '8'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Eight "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\par
+\cf2\tab\tab\cf1\b case\cf2\b0  \cf5 '9'\cf2 :\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Nine "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b static\cf2\b0  \cf1\b void\cf2\b0  printWord(String \cf3 s\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 i\cf2 , \cf3 length\cf2  = \cf3 s\cf2 .length();\cf0\par
+\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 length\cf2 ; \cf3 i\cf2 ++)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\i printValue\i0 (\cf3 s\cf2 .charAt(\cf3 i\cf2 ));\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab String \cf3\highlight7 s\cf2\highlight0  = \cf5 "48965"\cf2 ;\cf0\par
+\cf2\tab\tab\i printWord\i0 (\cf3\highlight8 s\cf2\highlight0 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Four Eight Nine Six Five \cf0\b\f1\fs22\par
+\par
+Que5 Write a program to print all ASCII character with their values.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  ASCII \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )   \cf0\par
+\cf2\tab\{  \cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  <= 255; \cf3 i\cf2 ++)  \cf0\par
+\cf2\tab\tab\{  \cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 " The ASCII value of "\cf2  + (\cf1\b char\cf2\b0 )\cf3 i\cf2  + \cf5 " = "\cf2  + \cf3 i\cf2 );  \cf0\par
+\cf2\tab\tab\}  \cf0\par
+\cf2\tab\}  \cf0\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT: (It's not complete output just some part)\par
+\cf2\b0\f2\fs20 The ASCII value of #  =  35\cf0\par
+\cf2  The ASCII value of $  =  36\cf0\par
+\cf2  The ASCII value of %  =  37\cf0\par
+\cf2  The ASCII value of &  =  38\cf0\par
+\cf2  The ASCII value of '  =  39\cf0\par
+\cf2  The ASCII value of (  =  40\cf0\par
+\cf2  The ASCII value of )  =  41\cf0\par
+\cf2  The ASCII value of *  =  42\cf0\par
+\cf2  The ASCII value of +  =  43\cf0\par
+\cf2  The ASCII value of ,  =  44\cf0\par
+\cf2  The ASCII value of -  =  45\cf0\par
+\cf2  The ASCII value of .  =  46\cf0\par
+\cf2  The ASCII value of /  =  47\cf0\par
+\cf2  The ASCII value of 0  =  48\cf0\par
+\cf2  The ASCII value of 1  =  49\cf0\par
+\cf2  The ASCII value of 2  =  50\cf0\par
+\cf2  The ASCII value of 3  =  51\cf0\par
+\cf2  The ASCII value of 4  =  52\cf0\par
+\cf2  The ASCII value of 5  =  53\cf0\par
+\cf2  The ASCII value of 6  =  54\cf0\par
+\cf2  The ASCII value of 7  =  55\cf0\par
+\cf2  The ASCII value of 8  =  56\cf0\par
+\cf2  The ASCII value of 9  =  57\cf0\par
+\cf2  The ASCII value of :  =  58\cf0\b\f1\fs22\par
+\par
+Que6 Write a program to find power of any number using for loop.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  power \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Scanner \cf3\ul s\cf2\ulnone = \cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .\highlight8 print\highlight0 (\cf5 "Enter the base: "\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 b\cf2 = \cf3 s\cf2 .nextInt();\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .\highlight8 print\highlight0 (\cf5 "Enter the power: "\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 p\cf2 = \cf3 s\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf1\b long\cf2\b0  \cf3 res\cf2 = 1;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (; \cf3 p\cf2  != 0; --\cf3 p\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\cf3 res\cf2 =\cf3 res\cf2 *\cf3 b\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Answer = "\cf2  + \cf3 res\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Enter the base: \cf6 2\cf0\par
+\cf2 Enter the power: \cf6 4\cf0\par
+\cf2 Answer = 16\cf0\par
+\b\f1\fs22\par
+\par
+Que7 Write a Java program to print the even numbers from 1 to 99. Prints all the numbers in one line separated by tabs.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  even \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf9 // \cf10\b TODO\cf9\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 1; \cf3 i\cf2  < 100; \cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0  (\cf3 i\cf2  % 2 != 0) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 i\cf2 +\cf5 "\\t"\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\par
+\cf2\tab\tab\}\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 1\tab 3\tab 5\tab 7\tab 9\tab 11\tab 13\tab 15\tab 17\tab 19\tab 21\tab 23\tab 25\tab 27\tab 29\tab 31\tab 33\tab 35\tab 37\tab 39\tab 41\tab 43\tab 45\tab 47\tab 49\tab 51\tab 53\tab 55\tab 57\tab 59\tab 61\tab 63\tab 65\tab 67\tab 69\tab 71\tab 73\tab 75\tab 77\tab 79\tab 81\tab 83\tab 85\tab 87\tab 89\tab 91\tab 93\tab 95\tab 97\tab 99\tab\cf0\b\f1\fs22\par
+\par
+Que8 Write a program to print the Fibonacci series up to first N numbers:\par
+In Fibonacci series, next number is the sum of previous two numbers for example 0, 1, 1, 2, 3,\par
+5, 8, 13, 21, 34, 55 etc. The first two numbers of Fibonacci series are 0 and 1.\par
+eg- First 5 numbers: 1, 2, 3, 5, 8\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject\f3\lang16393 7\f2\lang9 ;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Fibon \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Scanner \cf3\ul s\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the number you want the terms in series: "\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 n\cf2 =\cf3 s\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 a\cf2 =0,\cf3 b\cf2 =1;\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 a\cf2 +\cf5 ","\cf2 +\cf3 b\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =2; \cf3 i\cf2 <\cf3 n\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b int\cf2\b0  \cf3 c\cf2 =\cf3 a\cf2 +\cf3 b\cf2 ;\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 ","\cf2 +\cf3 c\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf3 a\cf2 =\cf3 b\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf3 b\cf2 =\cf3 c\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Enter the number you want the terms in series: \cf0\par
+\cf6 10\cf0\par
+\cf2 0,1,1,2,3,5,8,13,21,34\cf0\b\f1\fs22\par
+\par
+Que9 Define static & final keywords in regard with:\par
+9.a Class\par
+9.b Method\par
+9.c Variable\par
+Ans9= static Class: \b0 The class in which the nested class is defined is known as the Outer Class. Unlike top-level classes, Inner classes can be Static. Non-static nested classes are also known as Inner classes.\par
+\b static Method: \b0 If you apply static keyword with any method, it is known as static method.A static method belongs to the class rather than the object of a class. A static method can be invoked without the need for creating an instance of a class. A static method can access static data member and can change the value of it.\b\par
+static Variable: \b0 If you declare any variable as static, it is known as a static variable. The static variable can be used to refer to the common property of all objects. The static variable gets memory only once in the class area at the time of class loading.\b\par
+final Class: \b0 The final class is a class that is declared with the final keyword. We can restrict class inheritance by making use of the final class. Final classes cannot be extended or inherited. If we try to inherit a final class, then the compiler throws an error during compilation.\b\par
+final Method: \b0 We can declare a method as final, once we declare a method final it cannot be overridden. So, we cannot modify a final method from a sub class. The main intention of making a method final would be that the content of the method should not be changed by any outsider.\b\par
+final Variable: \b0 If you make any variable as final, you cannot change the value of final variable(It will be constant).\b\par
+\par
+Que10 Write a program in Java to print the Floyd's Triangle.\par
+Test Data\par
+Input number of rows : 5\par
+Expected Output:\par
+Input number of rows : 5\par
+1\par
+2 3\par
+4 5 6\par
+7 8 9 10\par
+11 12 13 14 15\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Floyd \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 n_rows\cf2 ;\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Input number of rows : "\cf2 );\cf0\par
+\cf2\tab\tab Scanner \cf3\ul in\cf2\ulnone  = \cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab\cf3 n_rows\cf2  = \cf3 in\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 number\cf2  = 1;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 1; \cf3 i\cf2 <= \cf3 n_rows\cf2 ; \cf3 i\cf2 ++)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3\highlight7 j\cf2\highlight0  = 1; \cf3\highlight8 j\cf2\highlight0  <= \cf3 i\cf2 ; \cf3\highlight7 j\cf2\highlight0 ++)\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 number\cf2  + \cf5 " "\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\cf3 number\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Input number of rows : \cf6 5\cf0\par
+\cf2 1 \cf0\par
+\cf2 2 3 \cf0\par
+\cf2 4 5 6 \cf0\par
+\cf2 7 8 9 10 \cf0\par
+\cf2 11 12 13 14 15 \cf0\par
+\b\f1\fs22\par
+\par
+Que11 Write a class that has an array of integers as data member and read() ,display(), find_largest(),find_smallest(), sum() and find_mean() as it member functions. Demonstrate the above methods to compute the respective values.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\cf1\b import\cf2\b0  \ul java.util.Scanner\ulnone ;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Array_int \{\cf0\par
+\cf2\tab\cf1\b int\cf2\b0 [] \cf4 arr\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  read(\cf1\b int\cf2\b0  \cf3 a\cf2 []) \{\cf0\par
+\cf2\tab\tab\cf4 arr\cf2 =\cf3 a\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display(\cf1\b int\cf2\b0  \cf3 arr\cf2 [])\{\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 arr\cf0\par
+\par
+\cf2\tab\tab\tab\tab .\cf4 length\cf2 ; \cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 arr\cf2 [\cf3 i\cf2 ] + \cf5 " "\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  findlargest()\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 largest\cf2 =\cf4 arr\cf2 [0];\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =1;\cf3 i\cf2 <\cf4 arr\cf2 .\cf4 length\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (\cf4 arr\cf2 [\cf3 i\cf2 ]>\cf3 largest\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 largest\cf2 =\cf4 arr\cf2 [\cf3 i\cf2 ];\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 largest\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  findsmallest()\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3\highlight7 smallest\cf2\highlight0 =\cf4 arr\cf2 [0];\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =1;\cf3 i\cf2 <\cf4 arr\cf2 .\cf4 length\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (\cf4 arr\cf2 [\cf3 i\cf2 ]<\cf3\highlight8 smallest\cf2\highlight0 ) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf3\highlight7 smallest\cf2\highlight0 =\cf4 arr\cf2 [\cf3 i\cf2 ];\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3\highlight8 smallest\cf2\highlight0 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  sum() \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 sum\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0; \cf3 i\cf2 <\cf4 arr\cf2 .\cf4 length\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf3 sum\cf2 =\cf3 sum\cf2 +\cf4 arr\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 sum\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  findMean() \{\cf0\par
+\cf2\tab\tab\cf1\b double\cf2\b0  \cf3 mean\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf4 arr\cf2 .\cf4 length\cf2  >0) \{\cf0\par
+\cf2\tab\tab\tab\cf3 mean\cf2 =(\cf1\b double\cf2\b0 )sum()/\cf4 arr\cf2 .\cf4 length\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 mean\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Array_int \cf3 a\cf2 = \cf1\b new\cf2\b0  Array_int();\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 darray\cf2 []= \{3,4,5,6,7\};\cf0\par
+\cf2\tab\tab\cf3 a\cf2 .read(\cf3 darray\cf2 );\cf0\par
+\cf2\tab\tab\cf3 a\cf2 .display(\cf3 darray\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Largest: "\cf2 +\cf3 a\cf2 .findlargest());\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Smallest: "\cf2 +\cf3 a\cf2 .findsmallest());\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Sum: "\cf2 +\cf3 a\cf2 .sum());\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Mean: "\cf2 +\cf3 a\cf2 .findMean());\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 3 4 5 6 7 \cf0\par
+\cf2 Largest: 7\cf0\par
+\cf2 Smallest: 3\cf0\par
+\cf2 Sum: 25\cf0\par
+\cf2 Mean: 5.0\cf0\par
+\b\f1\fs22\par
+\par
+Que12 Write a program that uses a class Array1 . Create a constructor to define the array data member \ldblquote arr\rdblquote . Also define show_data() & sort() methods to print the array and sort the array in ascending order respectively.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Array1 \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  show_data(\cf1\b int\cf2\b0 [] \cf3 a\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 a\cf2 .\cf4 length\cf2 ; \cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 a\cf2 [\cf3 i\cf2 ] + \cf5 " "\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  sortArray(\cf1\b int\cf2\b0 [] \cf3 a\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 temp\cf2 = 0;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 i\cf2  = 0; \cf3 i\cf2  < \cf3 a\cf2 .\cf4 length\cf2 ; \cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf3 j\cf2  = \cf3 i\cf2  + 1; \cf3 j\cf2  < \cf3 a\cf2 .\cf4 length\cf2 ; \cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0  (\cf3 a\cf2 [\cf3 i\cf2 ] > \cf3 a\cf2 [\cf3 j\cf2 ]) \{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf3 temp\cf2  = \cf3 a\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf3 a\cf2 [\cf3 i\cf2 ] = \cf3 a\cf2 [\cf3 j\cf2 ];\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf3 a\cf2 [\cf3 j\cf2 ] = \cf3 temp\cf2 ;\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Elements of array sorted in ascending order: "\cf2 );\cf0\par
+\cf2\tab\tab\i show_data\i0 (\cf3 a\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2     \{\cf0\par
+\cf2         \cf1\b int\cf2\b0 [] \cf3\highlight7 a\cf2\highlight0 =\{ 5, 9, 8, 12, 1, 3 \};\cf0\par
+\cf2         \cf1\b int\cf2\b0  \cf3\ul length\cf2\ulnone  = \cf3\highlight8 a\cf2\highlight0 .\cf4 length\cf2 ;\cf0\par
+\cf2         System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "Elements of original array: "\cf2 );\cf0\par
+\cf2         \i show_data\i0 (\cf3\highlight8 a\cf2\highlight0 );\cf0\par
+\cf2  \cf0\par
+\cf2         \i sortArray\i0 (\cf3\highlight8 a\cf2\highlight0 );\cf0\par
+\cf2     \}\cf0\par
+\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Elements of original array: 5 9 8 12 1 3 \cf0\par
+\cf2 Elements of array sorted in ascending order: \cf0\par
+\cf2 1 3 5 8 9 12 \cf0\par
+\b\f1\fs22\par
+\par
+Que13 Create a class to print an integer and a character with two methods having the same name but different sequence of the integer and the character parameters. For example, if the parameters of the first method are of the form (int n, char c), then that of the second method will be of the form (char c, int n).\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Char_num \{\cf0\par
+\cf2     \cf1\b void\cf2\b0  num_char(\cf1\b int\cf2\b0  \cf3 a\cf2  , \cf1\b char\cf2\b0  \cf3 c\cf2 )\{  \cf0\par
+\cf2         System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Integer is: "\cf2 +\cf3 a\cf2 + \cf5 "\\t Char is: "\cf2 +\cf3 c\cf2 );\cf0\par
+\cf2     \}    \cf0\par
+\par
+\cf2      \cf1\b void\cf2\b0  char_num(\cf1\b char\cf2\b0  \cf3 c\cf2 ,\cf1\b int\cf2\b0  \cf3 a\cf2  )\{\cf0\par
+\cf2         System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Char is: "\cf2 +\cf3 c\cf2 + \cf5 "\\tInteger is: "\cf2 +\cf3 a\cf2  );\cf0\par
+\cf2     \}   \cf0\par
+\cf2      \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\par
+\cf2          Char_num \cf3 obj\cf2  = \cf1\b new\cf2\b0  Char_num();\cf0\par
+\par
+\cf2          \cf3 obj\cf2 .num_char(10, \cf5 'A'\cf2 );\cf0\par
+\par
+\cf2          \cf3 obj\cf2 .char_num(\cf5 'B'\cf2 , 5);\cf0\par
+\par
+\cf2      \}\cf0\par
+\cf2\}\cf0\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Integer is: 10\tab  Char is: A\cf0\par
+\cf2 Char is: B\tab Integer is: 5\cf0\par
+\b\f1\fs22\par
+\par
+Que14 Create a class named 'Member' having the following members:\par
+Data members\par
+1 - Name\par
+2 - Age\par
+3 - Phone number\par
+4 - Address\par
+5 - Salary\par
+It also has a method named 'printSalary' which prints the salary of the members.\par
+Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' and\par
+'Manager' classes have data members 'specialization' and 'department' respectively. Now, assign name, age, phone number, address and salary to an employee and a manager by making an object of both of these classes and print the same.\par
+CODE:\par
+\cf1\f2\fs20 package\cf2\b0  testproject7;\cf0\par
+\par
+\cf2\tab  \cf1\b class\cf2\b0  Member \{\cf0\par
+\cf2\tab     \cf1\b private\cf2\b0  String \cf4\ul name\cf2\ulnone ;\cf0\par
+\cf2\tab     \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf4\ul age\cf2\ulnone ;\cf0\par
+\cf2\tab     \cf1\b private\cf2\b0  String \cf4\ul phoneNumber\cf2\ulnone ;\cf0\par
+\cf2\tab     \cf1\b private\cf2\b0  String \cf4\ul address\cf2\ulnone ;\cf0\par
+\cf2\tab     \cf1\b private\cf2\b0  \cf1\b double\cf2\b0  \cf4 salary\cf2 ;\cf0\par
+\par
+\cf2\tab     \cf1\b public\cf2\b0  Member(String \cf3 name\cf2 , \cf1\b int\cf2\b0  \cf3 age\cf2 , String \cf3 phoneNumber\cf2 , String \cf3 address\cf2 , \cf1\b double\cf2\b0  \cf3 salary\cf2 ) \{\cf0\par
+\cf2\tab         \cf1\b this\cf2\b0 .\cf4 name\cf2  = \cf3 name\cf2 ;\cf0\par
+\cf2\tab         \cf1\b this\cf2\b0 .\cf4 age\cf2  = \cf3 age\cf2 ;\cf0\par
+\cf2\tab         \cf1\b this\cf2\b0 .\cf4 phoneNumber\cf2  = \cf3 phoneNumber\cf2 ;\cf0\par
+\cf2\tab         \cf1\b this\cf2\b0 .\cf4 address\cf2  = \cf3 address\cf2 ;\cf0\par
+\cf2\tab         \cf1\b this\cf2\b0 .\cf4 salary\cf2  = \cf3 salary\cf2 ;\cf0\par
+\cf2\tab     \}\cf0\par
+\par
+\cf2\tab     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  printSalary() \{\cf0\par
+\cf2\tab         System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Salary "\cf2  + \cf4 salary\cf2 );\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab  \cf1\b class\cf2\b0  Employee \cf1\b extends\cf2\b0  Member \{\cf0\par
+\cf2\tab     \cf1\b private\cf2\b0  String \cf4\ul specialization\cf2\ulnone ;\cf0\par
+\par
+\cf2\tab     \cf1\b public\cf2\b0  Employee(String \cf3 name\cf2 , \cf1\b int\cf2\b0  \cf3 age\cf2 , String \cf3 phoneNumber\cf2 ,\cf0\par
+\cf2\tab                     String \cf3 address\cf2 , \cf1\b double\cf2\b0  \cf3 salary\cf2 , String \cf3 specialization\cf2 ) \{\cf0\par
+\cf2\tab         \cf1\b super\cf2\b0 (\cf3 name\cf2 , \cf3 age\cf2 , \cf3 phoneNumber\cf2 , \cf3 address\cf2 , \cf3 salary\cf2 );\cf0\par
+\cf2\tab         \cf1\b this\cf2\b0 .\cf4 specialization\cf2  = \cf3 specialization\cf2 ;\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab  \cf1\b class\cf2\b0  Manager \cf1\b extends\cf2\b0  Member\{\cf0\par
+\cf2\tab     \cf1\b private\cf2\b0  String \cf4\ul department\cf2\ulnone ;\cf0\par
+\par
+\cf2\tab     \cf1\b public\cf2\b0  Manager(String \cf3 name\cf2 , \cf1\b int\cf2\b0  \cf3 age\cf2 , String \cf3 phoneNumber\cf2 ,\cf0\par
+\cf2\tab                     String \cf3 address\cf2 , \cf1\b double\cf2\b0  \cf3 salary\cf2 , String \cf3 department\cf2 ) \{\cf0\par
+\cf2\tab         \cf1\b super\cf2\b0 (\cf3 name\cf2 , \cf3 age\cf2 , \cf3 phoneNumber\cf2 , \cf3 address\cf2 , \cf3 salary\cf2 );\cf0\par
+\cf2\tab         \cf1\b this\cf2\b0 .\cf4 department\cf2  = \cf3 department\cf2 ;\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b class\cf2\b0   Q14\{\cf0\par
+\cf2\tab     \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab         Employee \cf3 employee\cf2  = \cf1\b new\cf2\b0  Employee(\cf5 "Tom"\cf2 , 25, \cf5 "555-555-55"\cf2 , \cf5 "Home"\cf2 , 25631.5, \cf5 "IT"\cf2 );\cf0\par
+\cf2\tab         Manager \cf3 manager\cf2  = \cf1\b new\cf2\b0  Manager(\cf5 "Ron"\cf2 , 30, \cf5 "555-617-55"\cf2 , \cf5 "Earth"\cf2 , 69586.5, \cf5 "IT"\cf2 );\cf0\par
+\cf2\tab         \cf3 employee\cf2 .printSalary();\cf0\par
+\cf2\tab         \cf3 manager\cf2 .printSalary();\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\b\f1\fs22\par
+OUTPUT:\par
+\cf2\b0\f2\fs20 Salary 25631.5\cf0\par
+\cf2 Salary 69586.5\cf0\par
+\b\f1\fs22\par
+\par
+Que15 What are the advantages of Polymorphism in Java?\par
+Ans15= Advantages of Polymorphism are:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Programmers code can be reused via Polymorphism.\par
+{\pntext\f4\'B7\tab}Supports a single variable name for multiple data types.\par
+{\pntext\f4\'B7\tab}Reduces coupling between different functionalities.\b\par
+
+\pard\sa200\sl276\slmult1\par
+Que16 How does inheritance used in polymorphism in Java?\par
+Ans16= \b0 Polymorphism in Java occurs when there are one or more classes or objects related to each other by inheritance. It is the ability of an object to take many forms. Inheritance lets users inherit attributes and methods, and polymorphism uses these methods to perform different tasks. \par
+Polymorphism allows the programmer to write multiple definitions of a function. At the same time, inheritance enables the user to reuse the already written code.\b\par
+\par
+Que17 What is overloading in polymorphism in Java?\par
+Ans17= Overloading in polymorphism: \b0 Method overloading is the process that can create multiple methods of the same name in the same class, and all the methods work in different ways. Method overloading occurs when there is more than one method of the same name in the class.\par
+\b\par
+}
+ 

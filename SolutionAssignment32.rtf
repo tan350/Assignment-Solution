@@ -1,0 +1,234 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fswiss\fcharset0 Calibri;}{\f1\fswiss\fprq1\fcharset0 Consolas;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red100\green100\blue100;\red42\green0\blue255;\red0\green0\blue192;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs22\lang9 ===========================\b\fs36 Assignment 32\b0\fs22 ===============================\fs24\lang1033\par
+\b\fs22\lang9\tab\tab\tab\tab\tab\tab Submitted By \fs36 TANUJA SHARMA\b0\fs24\lang1033\par
+\fs22\lang9 ==============================================================================\fs24\lang1033\par
+\b\fs22\lang9 Que1.What is a page object model?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans1= Page Object Model(POM): \b0 It's a design pattern which is used in test automation that creates Object Repository for web UI elements. It reduces code duplication and improves test maintenance.\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que2.What is a page object model in selenium?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans2= Page Object Model(POM) in Selenium: \b0 Selenium acts on webelements with the help of their properties such ID, name, XPath, etc. Selenium has no inbuilt Object repositories. Page Object Model (POM) is a  design pattern to create an Object Repository in which each one of those webelements properties are created using a class file.\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que3.Is Page object model a framework?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans3= \b0 No, Page Object model is an object design pattern in Selenium. \fs24\lang1033\par
+\par
+\b\fs22\lang9 Que4.What is the Page Factory Class?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans4= Page Factory Class: \b0 Page Factory class in Selenium is an inbuilt Page Object Model framework concept for Selenium WebDriver but it is very optimized. It is used for initialization of Page objects. It is also used to initialize Page class elementsby using the initElements() method.\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que5.What is Page Factory?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans5= Page Factory: \b0 PageFactory is a class that implements the Page Object Model design pattern. In POM, one needs to initialize every page object individually. In PageFactory, all page objects are initialized by using the initElements() method. \fs24\lang1033\par
+\par
+\b\fs22\lang9 Que6.What is the difference between Page Object Model (POM) and Page Factory?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans6= Page Object Model (POM): \b0 Page Object Model is a way of representing an application in a test framework. For every page in the application, we create a Page Object to reference the page. Page Object Model is a design pattern that represents a web page and hold the functionality and members.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720\sa200\sl276\slmult1 Finding web elements using By.\par
+{\pntext\f2\'B7\tab}\lang1033 POM does not provide lazy initialization.\par
+{\pntext\f2\'B7\tab}Page Object Model is a design pattern.\par
+{\pntext\f2\'B7\tab}In POM, one needs to initialize every page object individually\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\fs24\par
+\b\fs22\lang9 Page Factory: \b0 Page Factory is one way of implementing the Page Object Model. Page Factory is a way to initialize the web elements we want to interact within the page object when we create an instance of it.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720\sa200\sl276\slmult1 Finding web elements using @FindBy.\par
+{\pntext\f2\'B7\tab}Page Factory does provide lazy initialization.\par
+{\pntext\f2\'B7\tab}PageFactory is a class that implements the Page Object Model design pattern.\par
+{\pntext\f2\'B7\tab}In PageFactory, all page objects are initialized by using the initElements() method.\fs24\lang1033\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\par
+\b\fs22\lang9 Que7.What is Test Class?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans7= Test Class: \b0 Test class is the class which we create, after creating the required classes for the different pages then we create a test class with execution steps. These steps would reference the object repository created for different page elements.\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que8.What is Page Action Class?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans8= Page Action Class: \b0 Page Action class is an ability provided by Selenium for handling keyboard and mouse events. In Selenium WebDriver, handling these events includes operations such as drag and drop in Selenium, clicking on multiple elements with the control key, among others\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que9.What is Page Factory Class?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans9=Page Factory Class: \b0 Page Factory class in Selenium is an inbuilt Page Object Model framework concept for Selenium WebDriver but it is very optimized. It is used for initialization of Page objects. It is also used to initialize Page class elements by using the initElements() method.\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que10.Can you write sample code for Page Factory Class?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans10= CODE LoginPage1.java:\b0\fs24\lang1033\par
+\cf1\b\f1\lang9 package\cf2\b0  Pages;\cf0\f0\lang1033\par
+\par
+\cf1\b\f1\lang9 import\cf2\b0  org.openqa.selenium.WebElement;\cf0\f0\lang1033\par
+\cf1\b\f1\lang9 import\cf2\b0  org.openqa.selenium.support.FindBy;\cf0\f0\lang1033\par
+\cf1\b\f1\lang9 import\cf2\b0  org.openqa.selenium.support.PageFactory;\cf0\f0\lang1033\par
+\par
+\cf1\b\f1\lang9 import\cf2\b0  Testbase.Testbase1;\cf0\f0\lang1033\par
+\par
+\cf1\b\f1\lang9 public\cf2\b0  \cf1\b class\cf2\b0  LoginPage1 \cf1\b extends\cf2\b0  Testbase1 \{\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf3 @FindBy\cf2 (name=\cf4 "username"\cf2 )\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab WebElement \cf5 uname\cf2 ;\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf3 @FindBy\cf2 (css=\cf4 "input[name='password']"\cf2 )\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab WebElement \cf5 pass\cf2 ;\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf3 @FindBy\cf2 (xpath=\cf4 "//button[text()=' Login ']"\cf2 )\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab WebElement \cf5 loginbtn\cf2 ;\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf3 @FindBy\cf2 (xpath=\cf4 "//p[text()='Forgot your password? ']"\cf2 )\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab WebElement \cf5 forgetpass\cf2 ;\cf0\f0\lang1033\par
+\cf1\b\f1\lang9 public\cf2\b0  LoginPage1()\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\{\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\tab PageFactory.\i initElements\i0 (\cf5\i drive\cf2\i0 ,\cf1\b this\cf2\b0 );\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\}\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf1\b public\cf2\b0  WebElement username_element()\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\{\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\tab\cf1\b return\cf2\b0  \cf5 uname\cf2 ;\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\}\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf1\b public\cf2\b0  WebElement password_element()\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\{\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\tab\cf1\b return\cf2\b0  \cf5 pass\cf2 ;\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\}\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf1\b public\cf2\b0  WebElement login_button()\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\{\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\tab\cf1\b return\cf2\b0  \cf5 loginbtn\cf2 ;\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\}\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf1\b public\cf2\b0  WebElement forgot_button()\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\{\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\tab\cf1\b return\cf2\b0  \cf5 forgetpass\cf2 ;\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\}\cf0\f0\lang1033\par
+\cf2\f1\lang9\tab\cf0\f0\lang1033\par
+\cf2\f1\lang9\}\cf0\f0\lang1033\par
+\b\fs22\lang9 CODE LoginTest.java:\b0\fs24\lang1033\par
+\fs22\lang9 package Test;\fs24\lang1033\par
+\par
+\fs22\lang9 import java.io.IOException;\fs24\lang1033\par
+\par
+\fs22\lang9 import org.testng.annotations.AfterSuite;\fs24\lang1033\par
+\fs22\lang9 import org.testng.annotations.BeforeSuite;\fs24\lang1033\par
+\fs22\lang9 import org.testng.annotations.Test;\fs24\lang1033\par
+\par
+\fs22\lang9 import Pages.LoginPage1;\fs24\lang1033\par
+\fs22\lang9 import Testbase.Testbase1;\fs24\lang1033\par
+\par
+\par
+\fs22\lang9 public class LoginTest extends Testbase1 \{\fs24\lang1033\par
+\fs22\lang9\tab LoginPage1 Lt;\fs24\lang1033\par
+\fs22\lang9\tab\fs24\lang1033\par
+\fs22\lang9\tab @BeforeSuite\fs24\lang1033\par
+\fs22\lang9\tab public void Launch() throws IOException, InterruptedException\fs24\lang1033\par
+\fs22\lang9\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab initialization();\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt= new LoginPage1();\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\fs22\lang9\tab\fs24\lang1033\par
+\fs22\lang9\tab @Test\fs24\lang1033\par
+\fs22\lang9\tab public void valid_credentials_login() throws InterruptedException\fs24\lang1033\par
+\fs22\lang9\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt.username_element().sendKeys(prop.getProperty("uname"));\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt.password_element().sendKeys(prop.getProperty("pass"));\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt.login_button().click();\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\fs22\lang9\tab\fs24\lang1033\par
+\fs22\lang9\tab @Test(enabled=false)\fs24\lang1033\par
+\fs22\lang9\tab public void invalid_credentials_login() throws InterruptedException\fs24\lang1033\par
+\fs22\lang9\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt.username_element().sendKeys(prop.getProperty("uname1"));\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt.password_element().sendKeys(prop.getProperty("pass1"));\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt.login_button().click();\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(200);\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\fs22\lang9\tab\fs24\lang1033\par
+\fs22\lang9\tab @Test(enabled=false)\fs24\lang1033\par
+\fs22\lang9\tab public void reset_password()\fs24\lang1033\par
+\fs22\lang9\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab Lt.forgot_button().click();\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\fs22\lang9\tab\fs24\lang1033\par
+\fs22\lang9\tab @AfterSuite\fs24\lang1033\par
+\fs22\lang9\tab public void Close_quit()\fs24\lang1033\par
+\fs22\lang9\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab Toclose();\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\fs22\lang9\}\fs24\lang1033\par
+\par
+\b\fs22\lang9 CODE Testbase1.java:\b0\fs24\lang1033\par
+\fs22\lang9 package Testbase;\fs24\lang1033\par
+\par
+\fs22\lang9 import java.io.FileInputStream;\fs24\lang1033\par
+\fs22\lang9 import java.io.FileNotFoundException;\fs24\lang1033\par
+\fs22\lang9 import java.io.IOException;\fs24\lang1033\par
+\par
+\fs22\lang9 import java.util.Properties;\fs24\lang1033\par
+\par
+\fs22\lang9 import org.openqa.selenium.WebDriver;\fs24\lang1033\par
+\fs22\lang9 import org.openqa.selenium.chrome.ChromeDriver;\fs24\lang1033\par
+\fs22\lang9 import org.openqa.selenium.chrome.ChromeOptions;\fs24\lang1033\par
+\par
+\par
+\fs22\lang9 import io.github.bonigarcia.wdm.WebDriverManager;\fs24\lang1033\par
+\par
+\fs22\lang9 public class Testbase1 \{\fs24\lang1033\par
+\fs22\lang9\tab public static WebDriver drive;\fs24\lang1033\par
+\fs22\lang9\tab public static Properties prop;\fs24\lang1033\par
+\par
+\fs22\lang9\tab public static void initialization() throws IOException, InterruptedException\fs24\lang1033\par
+\fs22\lang9\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab try\fs24\lang1033\par
+\fs22\lang9\tab\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab\tab FileInputStream fs=new FileInputStream("D:{{\field{\*\fldinst{HYPERLINK "\\\\\\\\workspace\\\\\\\\Example\\\\\\\\src\\\\\\\\test\\\\\\\\java\\\\\\\\Configurations\\\\\\\\Conf.properties"}}{\fldrslt{\\\\workspace\\\\Example\\\\src\\\\test\\\\java\\\\Configurations\\\\Conf.properties\ul0\cf0}}}}\f0\fs22 ");\fs24\lang1033\par
+\fs22\lang9\tab\tab\tab prop=new Properties();\fs24\lang1033\par
+\fs22\lang9\tab\tab\tab prop.load(fs);\fs24\lang1033\par
+\fs22\lang9\tab\tab\}\fs24\lang1033\par
+\fs22\lang9\tab\tab catch(FileNotFoundException e)\fs24\lang1033\par
+\fs22\lang9\tab\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab\tab System.out.println("File not found");\fs24\lang1033\par
+\fs22\lang9\tab\tab\tab //e.printStackTrace();\fs24\lang1033\par
+\fs22\lang9\tab\tab\}\fs24\lang1033\par
+\fs22\lang9\tab\tab WebDriverManager.chromedriver().setup();\fs24\lang1033\par
+\fs22\lang9\tab\tab ChromeOptions chromeoptions= new ChromeOptions();\fs24\lang1033\par
+\fs22\lang9\tab\tab chromeoptions.addArguments("--remote-allow-origins=*","ignore-certificate-errors");\fs24\lang1033\par
+\fs22\lang9\tab\tab drive= new ChromeDriver(chromeoptions);\fs24\lang1033\par
+\fs22\lang9\tab\tab drive.manage().window().maximize();\fs24\lang1033\par
+\fs22\lang9\tab\tab drive.get(prop.getProperty("url"));\fs24\lang1033\par
+\fs22\lang9\tab\tab Thread.sleep(800);\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\fs22\lang9\tab\fs24\lang1033\par
+\fs22\lang9\tab public static void Toclose()\fs24\lang1033\par
+\fs22\lang9\tab\{\fs24\lang1033\par
+\fs22\lang9\tab\tab drive.quit();\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\par
+\fs22\lang9\}\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que11.Can you write sample code for Page Action Class?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans11=CODE:\b0\fs24\lang1033\par
+\fs22\lang9 import org.openqa.selenium.By;\fs24\lang1033\par
+\fs22\lang9 import org.openqa.selenium.WebDriver;\fs24\lang1033\par
+\fs22\lang9 import org.openqa.selenium.WebElement;\fs24\lang1033\par
+\fs22\lang9 import org.openqa.selenium.chrome.ChromeDriver;\fs24\lang1033\par
+\fs22\lang9 import org.openqa.selenium.interactions.Actions;\fs24\lang1033\par
+\fs22\lang9 public class sendKeysExample \{\fs24\lang1033\par
+\fs22\lang9\tab public static void main(String[] args) \{\fs24\lang1033\par
+\fs22\lang9\tab\tab System.setProperty("webdriver.chrome.driver", "D:{{\field{\*\fldinst{HYPERLINK "\\\\\\\\chromedriver_win32\\\\\\\\chromedriver.exe"}}{\fldrslt{\\\\chromedriver_win32\\\\chromedriver.exe\ul0\cf0}}}}\f0\fs22 ");\fs24\lang1033\par
+\fs22\lang9\tab\tab WebDriver driver = new ChromeDriver();\fs24\lang1033\par
+\fs22\lang9\tab\tab driver.get("{{\field{\*\fldinst{HYPERLINK https://www.google.com/ }}{\fldrslt{https://www.google.com/\ul0\cf0}}}}\f0\fs22 ");\fs24\lang1033\par
+\fs22\lang9\tab\tab driver.manage().window().maximize();\fs24\lang1033\par
+\fs22\lang9\tab\tab WebElement element = driver.findElement(By.xpath("//*[@id=\\"tsf\\"]/div[2]/div[1]/div[1]/div/div[2]/input"));\fs24\lang1033\par
+\fs22\lang9\tab\tab Actions action = new Actions(driver);\fs24\lang1033\par
+\fs22\lang9\tab\tab action.sendKeys(element, "iphone").build().perform();\tab\tab\fs24\lang1033\par
+\fs22\lang9 driver.quit();\tab\fs24\lang1033\par
+\fs22\lang9\tab\}\fs24\lang1033\par
+\fs22\lang9\}\fs24\lang1033\par
+\par
+\b\fs22\lang9 Que12.What are the advantages of using page object pattern?\b0\fs24\lang1033\par
+\b\fs22\lang9 Ans12= Advantages of using page object pattern are:\b0\fs24\lang1033\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li720\sa200\sl276\slmult1\fs22\lang9 It makes the code readable by making the Elemnts and actions separated.\fs24\lang1033\par
+{\pntext\f2\'B7\tab}\fs22\lang9 Several tests can use the same Object Repository because it is independent of Test Cases.\fs24\lang1033\par
+{\pntext\f2\'B7\tab}\fs22\lang9 The code becomes reusable.\fs24\lang1033\par
+{\pntext\f2\'B7\tab}\fs22\lang9 Easy Maintenance of scripts.\fs24\lang1033\par
+}
+ 

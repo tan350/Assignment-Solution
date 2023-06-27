@@ -1,0 +1,26 @@
+</test>
+<test name="Ttest1">
+<parameter name="sUsername" value="testuser_1"/>
+<parameter name="sPassword" value="Test@123"/>
+<classes>
+<class name="automationFramework.TestngParameters" />
+</classes></test>
+
+
+
+
+
+
+
+
+
+
+//=================================================
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+public class Parameter {
+@Test
+@Parameters ({ "sUsername", "sPassword" })
+public void test(String sUsername, String sPassword) {
+System.out.println(sUsername);
+System.out.println(sPassword);}}
